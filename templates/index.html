@@ -13,7 +13,7 @@
         <title>Smart Permit Pro </title>
 		
 		<!-- Favicon -->
-        <link rel="icon" href="static/img/favicon.png">
+        <link rel="icon"  href="static/img/favicon.png">
 		
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
@@ -62,6 +62,7 @@
         <!-- End Preloader -->
 		
 		<!-- Get Pro Button -->
+		
 		<ul class="pro-features">
 			<a class="get-pro" href="#">Essential</a>
 			<li class="big-title">The requirements for a water permit can vary widely depending on the location</li>
@@ -74,10 +75,11 @@
 			     <li>Water Conservation Plan</li>
 			</ol>
 			<div class="button">
-				<a href="#" target="_blank" class="btn">Apply</a>
+				<a href="{{ url_for('login') }}"  class="btn">Apply</a>
 				<a href="#" target="_blank" class="btn">Cancel</a>
 			</div>
 		</ul>
+	    
 	
 		<!-- Header Area -->
 		<header class="header" >
@@ -132,7 +134,7 @@
 													<li><a href="templates/landingPage.html">Home Page 1</a></li>
 												</ul>
 											</li>
-											<li><a href="#">Portfolio </a></li>
+											<li><a href="">Portfolio </a></li>
 											<li><a href="#">Services </a></li>
 											<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
@@ -152,7 +154,7 @@
 							</div>
 							<div class="col-lg-2 col-12">
 								<div class="get-quote">
-									<a href="#" class="btn">Regester Here</a>
+									<a href="{{ url_for('register') }}" class="btn">Regester Here</a>
 								</div>
 							</div>
 						</div>
@@ -175,7 +177,7 @@
 									<h1>We Provide <span>Water Permit.</span> Services That You  <span>Need!</span></h1>
 									
 									<div class="button">
-										<a href="#" class="btn">Login</a>
+										<a href="{{ url_for('login') }}" class="btn">Login</a>
 										<a href="#" class="btn primary">Contact Us</a>
 									</div>
 								</div>
@@ -193,7 +195,7 @@
 									<h1>We Provide <span>Water Permit.</span> Services That You  <span>Need!</span></h1>
 									
 									<div class="button">
-										<a href="#" class="btn">Login</a>
+										<a href="{{ url_for('login') }}" class="btn">Login</a>
 										<a href="#" class="btn primary">Contact Us</a>
 									</div>
 								</div>
@@ -211,7 +213,7 @@
 									<h1>We Provide <span>Water Permit.</span> Services That You  <span>Need!</span></h1>
 									
 									<div class="button">
-										<a href="#" class="btn">Login</a>
+										<a href="{{ url_for('login') }}" class="btn">Login</a>
 										<a href="#" class="btn primary">Contact Us</a>
 									</div>
 								</div>
@@ -411,16 +413,16 @@
 							<div class="row">
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>Environmental Impact Assessment </li>
+										<li><i class="fa fa-caret-right"></i>Safeguard/Alternative</li>
+										<li><i class="fa fa-caret-right"></i>Complex Regulations</li>
 									</ul>
 								</div>
 								<div class="col-lg-6">
 									<ul class="list">
-										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+										<li><i class="fa fa-caret-right"></i>Mobile Accessibility </li>
+										<li><i class="fa fa-caret-right"></i>Geospatial Data Handling</li>
+										<li><i class="fa fa-caret-right"></i>User Training and Adoption</li>
 									</ul>
 								</div>
 							</div>
@@ -487,14 +489,16 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
-							<h4><a href="templates/service-details.html">General Treatment</a></h4>
-							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>	
+							<h4><a href="templates/service-details.html">Government Treatment</a></h4>
+							<p>Government entities responsible for water resource management, such as water departments, environmental agencies, and regulatory bodies, can use the Portfolio Project to streamline permit issuance, monitor compliance, and ensure sustainable water management.
+							</p>	
 						</div>
 
 						<div class="single-service">
 							<i class="icofont icofont-prescription"></i>
-							<h4><a href="templates/service-details.html">General Treatment</a></h4>
-							<p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </p>	
+							<h4><a href="templates/service-details.html">Water Utilities</a></h4>
+							<p>Public and private water utilities that supply water for domestic, industrial, and agricultural purposes can benefit from efficient permit management to meet the growing demands for water while adhering to regulations.
+							</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -502,8 +506,9 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-tooth"></i>
-							<h4><a href="templates/service-details.html">Teeth Whitening</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<h4><a href="templates/service-details.html">River Water</a></h4>
+							<p>Local governments can utilize the project to manage water resources for public services, such as drinking water supply, wastewater treatment, and stormwater management.
+							</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -511,8 +516,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-heart-alt"></i>
-							<h4><a href="templates/service-details.html">Heart Surgery</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<h4><a href="templates/service-details.html">Dam Water</a></h4>
+							<p>Organizations focused on protecting natural ecosystems and aquatic habitats can monitor permit issuance and usage to ensure the preservation of these environments. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -520,8 +525,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-listening"></i>
-							<h4><a href="templates/service-details.html">Ear Treatment</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<h4><a href="templates/service-details.html">Water Treatment</a></h4>
+							<p> Academic and research institutions can access data and insights generated by the project to conduct research on water resource management and its environmental impact. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -530,7 +535,8 @@
 						<div class="single-service">
 							<i class="icofont icofont-eye-alt"></i>
 							<h4><a href="templates/service-details.html">Vision Problems</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<p>Developers involved in land development and construction projects can obtain permits for water usage in construction, landscaping, and infrastructure development.
+							</p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -538,8 +544,8 @@
 						<!-- Start Single Service -->
 						<div class="single-service">
 							<i class="icofont icofont-blood"></i>
-							<h4><a href="service-details.html">Blood Transfusion</a></h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>	
+							<h4><a href="service-details.html">Water distribution Transfusion</a></h4>
+							<p>Individual property owners and residents can obtain permits for private water usage. </p>	
 						</div>
 						<!-- End Single Service -->
 					</div>
@@ -556,7 +562,8 @@
 						<div class="section-title">
 							<h2>We Provide You The Best Treatment In Resonable Price</h2>
 							<img src="static/img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+							<p>Industries requiring water for manufacturing, cooling, and various processes can obtain permits and effectively manage their water use to reduce operational costs and environmental impact.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -569,7 +576,7 @@
 								<div class="icon">
 									<i class="icofont icofont-ui-cut"></i>
 								</div>
-								<h4 class="title">Plastic Suggery</h4>
+								<h4 class="title">Borehore Water</h4>
 								<div class="price">
 									<p class="amount">$199<span>/ Per Visit</span></p>
 								</div>	
@@ -597,18 +604,18 @@
 								<div class="icon">
 									<i class="icofont icofont-tooth"></i>
 								</div>
-								<h4 class="title">Teeth Whitening</h4>
+								<h4 class="title">Spring Water</h4>
 								<div class="price">
 									<p class="amount">$299<span>/ Per Visit</span></p>
 								</div>	
 							</div>
 							<!-- Table List -->
 							<ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Donec ultricies metus</li>
-								<li class="cross"><i class="icofont icofont-ui-close"></i>Pellentesque eget nibh</li>
+								<li><i class="icofont icofont-ui-check"></i>Regulatory Changes</li>
+								<li><i class="icofont icofont-ui-check"></i>Legal and Compliance Risks</li>
+								<li><i class="icofont icofont-ui-check"></i>Public Opposition</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Resource Allocation Challenges</li>
+								<li class="cross"><i class="icofont icofont-ui-close"></i>Stakeholder Conflicts</li>
 							</ul>
 							<div class="table-bottom">
 								<a class="btn" href="#">Book Now</a>
@@ -625,18 +632,18 @@
 								<div class="icon">
 									<i class="icofont-heart-beat"></i>
 								</div>
-								<h4 class="title">Heart Suggery</h4>
+								<h4 class="title">Water Supply</h4>
 								<div class="price">
 									<p class="amount">$399<span>/ Per Visit</span></p>
 								</div>	
 							</div>
 							<!-- Table List -->
 							<ul class="table-list">
-								<li><i class="icofont icofont-ui-check"></i>Lorem ipsum dolor sit</li>
-								<li><i class="icofont icofont-ui-check"></i>Cubitur sollicitudin fentum</li>
-								<li><i class="icofont icofont-ui-check"></i>Nullam interdum enim</li>
-								<li><i class="icofont icofont-ui-check"></i>Donec ultricies metus</li>
-								<li><i class="icofont icofont-ui-check"></i>Pellentesque eget nibh</li>
+								<li><i class="icofont icofont-ui-check"></i>Water Spring</li>
+								<li><i class="icofont icofont-ui-check"></i>Water Dam</li>
+								<li><i class="icofont icofont-ui-check"></i>Berehole Water</li>
+								<li><i class="icofont icofont-ui-check"></i>Water Cleaning</li>
+								<li><i class="icofont icofont-ui-check"></i>Water for Agriculture</li>
 							</ul>
 							<div class="table-bottom">
 								<a class="btn" href="#">Book Now</a>
@@ -824,8 +831,11 @@
 								<div class="col-lg-5 col-md-4 col-12">
 									<div class="form-group">
 										<div class="button">
-											<button type="submit" class="btn">Register Here</button>
+											<form method="post" action="{{ url_for('register') }}">
+											     <button type="submit" class="btn">Register Here</button>
+											</form>
 										</div>
+										
 									</div>
 								</div>
 								<div class="col-lg-7 col-md-8 col-12">
